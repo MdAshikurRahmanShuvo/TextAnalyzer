@@ -48,7 +48,7 @@
     <div class="card-box">
         <h1>Welcome to Text Analyzer</h1>
 
-        <form action="/removePunc" method="get">
+        <form action="/analyzer" method="get">
             <div class="mb-3">
                 <label for="text" class="form-label">Enter your text</label>
                 <textarea 
@@ -59,7 +59,11 @@
                     placeholder="Type your text here..."
                     required></textarea>
             </div>
-
+            <h5>In the Same time any two can be selected</h5>
+            <input type="checkbox" id="removePunc" name="removePunc"> Remove Punctuation<br>
+            <input type="checkbox" id="CapitalLetter" name="CapitalLetter">Capitalize Letter <br>
+            <input type="checkbox" id="upperCase" name="upperCase">Upper Case <br>
+            <input type="checkbox" id="lowerCase" name="lowerCase">Lower Case <br>
             <button type="submit" class="btn btn-primary w-100 py-2">
                 Analyze Text
             </button>
